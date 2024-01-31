@@ -1,0 +1,105 @@
+.profile-container {
+  width: 300px;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 40%;
+  padding: 5px;
+  border: 5px solid #07eb4b;
+  border-radius: 8px;
+  border-color: #8db600;
+}
+
+h2 {
+  color: #333;
+}
+/* for username input box  */
+.profile-fields {
+  margin-top: 20px;
+}
+.input-container{
+  font-weight:bold ;
+  font-size: large;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-color: #8db600;
+  border: 5px solid #8db600;
+  margin-top: 10px;
+
+}
+.eye-toggle {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateX(-150%);
+  cursor: pointer;
+}
+.password-container {
+  position: relative;
+}
+
+.form-group{
+  margin-left: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+input[type='text']{
+  font-weight: bold;
+}
+input {
+  position: relative;
+  align-items: center;
+  width: 90%;
+    padding: 8px;
+    background-color: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-color: #8db600;
+    border-width: 4px;
+}
+
+button {
+  width: 30%;
+  margin-left: 30%;
+  background-color: #8db600;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #5cc01e;
+}
+
+.alert{
+  font-weight: bold;
+  color: red;
+  font-size: 17px;
+  padding-left:5% ;
+}
+.success-message{
+  color:green
+}
+@media screen and (max-width: 768px) {
+  .profile-container {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .eye-toggle {
+    top: 20%;
+    transform: translate-Y(-40%);
+  }
+
+  button {
+    width: 50%;
+    margin-left: 25%;
+  }
+}

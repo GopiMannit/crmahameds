@@ -1,0 +1,176 @@
+.install-button-container {
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.install-button {
+  background-color: #0a0f01;
+  color: #f6f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.error-message {
+    color: red
+  }
+  .alert-message{
+    color: red;
+    margin-top: 10px;
+  }
+  .error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .success-message {
+    color: rgb(28, 116, 28);
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
+  .danger-sign {
+    color: red;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .login-container {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #8db600;
+    padding: 25px;
+  }
+  
+  .login-form {
+    max-width: 300px;
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    width: 100%;
+    padding: 6px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+  
+  .password-field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .show-password {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .show-password input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .text-center {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  button {
+    width: 80%;
+    background-color: #8db600;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .login-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: black;
+  }
+  
+  @media screen and (max-width:1200px) {
+    .login-form {
+      max-width: 90%;
+    }
+  
+    .login-image {
+      max-width: 40%;
+    }
+    .install-button-container {
+      display: block; /* Show the installation button container on smaller screens */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .login-form {
+      max-width: 80%;
+    }
+  
+    .login-image {
+      max-width: 40%;
+    }
+    .install-button-container {
+      display: block;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    .install-button {
+      font-size: 12px;
+      width: 100px;
+      height: 25px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .install-button-container {
+      display: block;
+      position: fixed;
+      bottom: 10px; /* Adjust button position for better fit on even smaller screens */
+      right: 10px; /* Adjust button position for better fit on even smaller screens */
+    }
+  
+    .install-button {
+      font-size: 10px; 
+      width: 90px; /* Further adjust button width for better fit on even smaller screens */
+      height: 20px; /* Further adjust button height for better fit on even smaller screens */
+    } 
+  }
+  

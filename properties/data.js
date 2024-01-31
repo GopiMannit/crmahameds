@@ -1,0 +1,32 @@
+// data.js
+export const data = {
+  phonenumber: "",
+  name: "",
+  age: "",
+  gender: "",
+  location: "",
+  paintype: "",
+  remarks: "",
+  turnupscale: "",
+  doctorSelection: "",
+  finance: "",
+  distance: "",
+  treatment: "",
+  remarksDoc: "",
+  expectedDate: "",
+  followUpDate: "",
+  name_0: "",
+  age_0: "",
+  gender_0: "",
+  location_0: "",
+  paintype_0: "",
+  remarks_0: "",
+};
+// export const data_loop = {
+//   name_0: "",
+//   age_0: "",
+//   gender_0: "",
+//   location_0: "",
+//   paintype_0: "",
+//   remarks_0: "",
+// };

@@ -1,0 +1,223 @@
+.full {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.expected-date{
+  position: relative;
+  display: flex;
+  margin-right: 850px;
+  margin-top: 10px;
+}
+.expected-date label{
+  margin-right: 20px;
+  font-size: large;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+
+}
+
+.search-icon {
+  cursor: pointer;
+  margin-left: 20%;
+  position: absolute;
+  margin-bottom: 60px;
+  font-size: 25px;
+}
+
+.custom-input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 3px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 5px; */
+
+}
+
+.table {
+  border-collapse: collapse;
+  width: 1200px;
+  text-align: center;
+  box-shadow: 0 0 10px #8bd600;
+  margin-top: 10px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.table th {
+  background-color: #8bd600;
+  color: white;
+}
+.button-group{
+ position: absolute;
+ margin-top: 10px;
+ margin-left: 50px;
+}
+/* .primary-table {
+  display: flex;
+  margin-right: 44%;
+} */
+
+.primary-btn,
+.secondary-btn,
+.third-btn,
+.fourth-btn {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #8bd600;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.third-btn:hover,
+.fourth-btn:hover {
+  background-color: #0a4d11ed;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pagination li {
+  margin-right: 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.pagination .active a {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination a:hover {
+  background-color: #f2f2f2;
+  color: blue;
+}
+
+.primary-btn.selected,
+.secondary-btn.selected,
+.third-btn.selected,
+.fourth-btn.selected {
+  background-color: #2c5b1d;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 800px) {
+  .full {
+    width: 80%;
+    margin-right: 0;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .top {
+    width: 80%;
+    margin-right: 0;
+    flex-direction: column;
+  }
+
+  .expected-date label {
+    margin-right: 0;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .search-input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .search-icon {
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .custom-input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .table-container {
+    width: 100%;
+  }
+
+  .table {
+    width: 100%;
+    /* Adjusted width for full width */
+    /* overflow-x: hidden;  */
+  }
+
+  .table th,
+  .table td {
+    width: auto;
+  }
+
+  .primary-table {
+    width: 100%;
+    /* Adjusted width for full width */
+    margin-right: 0;
+    /* Removed margin-right for better alignment */
+  }
+
+  .pagination {
+    margin-top: 10px;
+    /* Added margin-top for better spacing */
+  }
+
+  /* Your other elements' styles... */
+}
+
+@media only screen and (max-width: 600px) {
+  .full {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .full {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .full {
+    width: 100%;
+  }
+}

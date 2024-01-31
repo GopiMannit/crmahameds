@@ -1,0 +1,163 @@
+/* Global box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: red;
+}
+
+.alert-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.danger-sign {
+  color: red;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8db600;
+}
+
+.register-form {
+  max-width: 300px;
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 6px;
+  font-weight: bold;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.password-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.eye-toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  cursor: pointer;
+  font-weight: lighter;
+  opacity: 0.5;
+}
+
+.show-password input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.text-center {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+button {
+  width: 80%;
+  background-color: #8db600;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.register-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+
+.role-dropdown {
+  width: 100%;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 0;
+  border: none;
+  color: rgb(32, 31, 31);
+  border-bottom: 1px solid #ccc;
+  appearance: none;
+  position: relative;
+}
+
+ .role-dropdown option {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.role-dropdown.user {
+  font-weight: bold;
+  color: green;
+} 
+
+
+.role-dropdown.admin {
+  font-weight: bold;
+  color: blue;
+}
+
+
+@media screen and (max-width: 768px) {
+  .register-form {
+    max-width: 90%;
+  }
+
+  .register-image {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .register-form {
+    max-width: 90%;
+  }
+
+  .register-image {
+    max-width: 50%;
+  }
+}

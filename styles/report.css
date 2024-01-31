@@ -1,0 +1,217 @@
+.full {
+  overflow: auto;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  margin-top: 19px;
+}
+
+.filter-search label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+
+}
+.filter-search{
+  margin-left: 3%;
+  margin-top: 70px;
+  left: 0;
+  position: absolute;
+
+}
+.filter{
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: 3px solid #ccc;
+  left: 0;
+}
+
+.search-icon {
+  cursor: pointer;
+  margin-right: 350px;
+  font-size: 25px;
+}
+.date{
+  padding: 8px;
+  border-radius: 8px;
+  border: 3px solid #ccc;
+ margin-left: 10px;
+}
+
+.label-date{
+  /* display: flex; */
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.custom-input {
+  margin-left: 15px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 3px solid #ccc;
+  margin-top: 10px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+ 
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  word-spacing: 2px;
+  box-shadow: 0 0 10px #8bd600;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 130px;
+}
+
+.table th {
+  background-color: #8bd600;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.pagination li {
+  margin-right: 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.pagination .active a {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination a:hover {
+  background-color: #f2f2f2;
+  color: blue;
+}
+  @media only screen and (max-width: 800px) {
+    .table-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-right: 160px; /* Adjust the left margin */
+      overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    }
+    .table {
+      width: 90%;
+    }
+  
+  .table-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid #ddd; /* Add border between rows */
+    padding: 10px 0; /* Adjust spacing */
+  }
+
+    .table-cell {
+      width: 100%;
+      padding:8px;
+      border-right: 1px solid #ddd; /* Add border between cells */
+    }
+    .table-cell:last-child {
+      border-right: none; /* Remove border for the last cell */
+    }
+  
+    .table-cell:before {
+      content: attr(data-title);
+      font-weight: bold;
+      padding-right: 10px; /* Adjust spacing */
+    }  
+    .table thead,
+    .table tbody,
+    .table tr {
+      display: flex;
+      flex-direction: column; /* Arrange rows vertically */
+      width: 100%;
+/* display: inline-block */
+     }
+  
+    .table td,
+    .table th {
+      width: auto; /* Reset width for each cell */
+      text-align: left; /* Align text to left */
+      border: none; /* Remove borders between cells */
+    }
+  
+    .table td:before,
+    .table th:before {
+      content: attr(data-title);
+      font-weight: bold;
+    }
+    
+    
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .full {
+      width: 90%;
+    }
+    .table th,
+    .table td {
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .full {
+      width: 95%;
+    }
+    .table th,
+    .table td {
+      padding: 3px; /* Further adjust padding for smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 200px) {
+    .full {
+      width: 100%;
+    }
+    .table th,
+    .table td {
+      padding: 2px; /* Further adjust padding for smaller screens */
+    }
+  }
+  
+  
+
